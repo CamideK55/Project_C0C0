@@ -1,0 +1,219 @@
+body {
+    margin: 0;
+    background-color: white;
+    width: 100%;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    padding-bottom: 20%;
+}
+
+
+code {
+    white-space: pre;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
+h2 {
+    text-align: center;
+
+}
+
+h5 {
+    text-align: center;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+    color: black;
+}
+
+figcaption {
+
+}
+
+figure {
+    text-align: center;
+}
+
+.image1 {
+    width: 33%;
+    float: right;
+    padding-top: 5%;
+    border-style: solid;
+    border-color: #74ACDF;
+    border-radius: 20px;
+    border-width: thin;
+}
+
+.image2 {
+    width: 33%;
+    text-align: center;
+    padding-top: 5%;
+    border-style: solid;
+    border-color: #74ACDF;
+    border-radius: 20px;
+    border-width: thin;
+}
+
+.image3 {
+    width: 33%;
+    float: left;
+    padding-top: 5%;
+    border-style: solid;
+    border-color: #74ACDF;
+    border-radius: 20px;
+    border-width: thin;
+}
+
+.image1:hover, .image2:hover, .image3:hover {
+    background-color: #D4D4D4;
+}
+
+.about {
+    padding: 5%;
+}
+
+.main {
+    padding: 20px;
+    height: 65vh;
+}
+
+.search {
+    width: 30vw;
+    height: 4vw;
+    font-size: 15px;
+    line-height: 15px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: thin;
+    padding: 10px;
+}
+
+.searchsmall {
+    width: 10vw;
+    height: 4vw;
+    font-size: 15px;
+    line-height: 15px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: thin;
+    padding: 10px;
+
+}
+
+.submit {
+    width: 10vw;
+    font-size: 15px;
+    line-height: 15px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: thin;
+    padding: 10px;
+    background-color: #74ACDF;
+    font-family: fantasy;
+}
+
+.topbar {
+    height: 15vh;
+    padding: 20px;
+    font-family: fantasy;
+    font-size: 25px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg/1280px-Claude_Monet_-_The_Magpie_-_Google_Art_Project.jpg");
+}
+
+.bottombar {
+    bottom: 0;
+    background-color: #74ACDF;
+    height: 20vh;
+    padding: 20px;
+    font-family: fantasy;
+    font-size: 25px;
+    position: fixed;
+
+}
+
+#name_page {
+    width: 20vw;
+}
+
+
+#error {
+    text-align: center;
+}
+
+.left{
+    float: left;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.leftindex{
+    float: left;
+    width: 50%;
+    padding-left: 40px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.rightindex{
+    float: right;
+    width: 50%;
+    padding-right: 15px;
+    padding-top: 75px;
+}
+
+.centerindex {
+    padding-left: 15%;
+}
+
+.centerindexsearch {
+    padding-left: 25%;
+}
+
+.right{
+    float: right;
+    width: 50%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.adsearch{
+    margin-top: 10%;
+    padding-left: 45%;
+}
+
+.centerad {
+    padding-left: 15%;
+}
+
+.left1 {
+    float: left;
+    width: 30%;
+    padding-right: 15px;
+    padding-top: 5px;
+}
+
+.right1 {
+    float: right;
+    width: 70%;
+    padding-right: 15px;
+    padding-top: 5px;
+}

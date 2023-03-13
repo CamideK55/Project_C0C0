@@ -1,0 +1,40 @@
+{% extends "search/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Advanced
+{% endblock %}
+
+{% block body %}
+    <div class="advanced">
+        <h1>Search ConnectedCollections <br> Advanced</h1>
+    </div>
+    <form action="{% url 'adsearchres' %}" method="post">
+        {% csrf_token %}
+        <div class="left">
+            <div class="centerad">
+                <input class="search" type="text" name="q" placeholder="Full Artist Name">
+                <br>
+                <br>
+                <input class="search" type="text" name="title" placeholder="Title">
+            </div>
+        </div>
+        <div class="right">
+            <div class="centerad">
+                <input class="search" type="text" name="object" placeholder="Type of Object">
+                <br>
+                <br>
+                <div class="left1">
+                    <input class="searchsmall" type="text" name="from" placeholder="From Year">
+                </div>
+                <div class="right1">
+                    <input class="searchsmall" type="text" name="to" placeholder="Until Year">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="adsearch">
+            <input class="submit" type="submit" value="Search">
+        </div>
+    </form>
+{% endblock %}

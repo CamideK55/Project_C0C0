@@ -1,0 +1,26 @@
+{% extends "search/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block body %}
+    <div class="leftindex">
+        <h1>Search ConnectedCollections</h1>
+        <div class="centerindex">
+            <form action="{% url 'searchres' %}" method="post">
+                {% csrf_token %}
+                <input class="search" type="text" name="q" placeholder="Quick Search C0C0">
+                <br>
+                <br>
+                <div class="centerindexsearch">
+                    <input class="submit" type="submit" value="Search">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="rightindex">
+        <h5>Welcome to the search page that looks across museum collections. Please provide your search term in the search box.</h5>
+    </div>
+{% endblock %}

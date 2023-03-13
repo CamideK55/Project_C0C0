@@ -1,0 +1,48 @@
+{% extends "search/layout.html" %}
+{% load static %}
+
+{% block title %}
+    Search results
+{% endblock %}
+
+{% block body %}
+    <h1>Search results</h1>
+    <br>
+    <h2>Rijksmuseum</h2>
+    <div class="row">
+        {% for item in content %} <!-- loop through list of dicts inspired by https://stackoverflow.com/questions/8949834/django-how-do-i-iterate-through-a-list-of-dictionaries-to-concatenate-values-f-->
+            {% if forloop.counter == 2 %}
+                <h2>Cleveland Museum of Art</h2>
+                <br>
+            {% endif %}
+            {% for key, value in item.items %} <!-- same as last comment-->
+                {% if forloop.counter|divisibleby:"3" %} <!--inspired by https://stackoverflow.com/questions/72917273/django-forloop-counter-0-divisible-by-3-not-working-properly-->
+                    <div class="image1">
+                        <figure>
+                            <a href={{value}} target="_blank"><img alt={{key}} src={{value}} width="120xp"></a>
+                            <figcaption>{{ key }}</figcaption>
+                        </figure>
+                    </div>
+                {% elif forloop.counter|divisibleby:"2" %}
+                    <div class="image2">
+                        <figure>
+                            <a href={{value}} target="_blank"><img alt={{key}} src={{value}} width="120xp"></a>
+                            <figcaption>{{ key }}</figcaption>
+                        </figure>
+                    </div>
+                {% else %}
+                    <div class="image3">
+                        <figure>
+                            <a href={{value}} target="_blank"><img alt={{key}} src={{value}} width="120xp"></a>
+                            <figcaption>{{ key }}</figcaption>
+                        </figure>
+                    </div>
+                {% endif %}
+                <br>
+            {% empty %}
+                <h2>No search results : (</h2>
+            {% endfor %}
+            <br>
+        {% endfor %}
+    </div>
+{% endblock %}
